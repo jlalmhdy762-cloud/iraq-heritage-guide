@@ -2,12 +2,12 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin', 'cyrillic', 'vietnamese'] });
 
 export const metadata: Metadata = {
-  title: 'دليل حضارات العراق',
-  description: 'دليل تفاعلي للمواقع الأثرية العراقية ودراسة الحضارات القديمة.',
-  metadataBase: new URL('https://example.com')
+  title: 'دليل حضارات العراق | Iraq Heritage Guide',
+  description: 'دليل تفاعلي للمواقع الأثرية العراقية والرحلات الثقافية.',
+  metadataBase: new URL('https://iraq-heritage-guide.vercel.app')
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
